@@ -1,0 +1,91 @@
+<h2>Укажите площадь и толщину стяжки</h2>
+{% if type is not empty %}
+	<p><b>Вид стяжки: </b>{{type}}</p>
+{% endif %}
+
+{% if sqr is not empty %}
+	<p><b>Площадь: </b>{{sqr}}</p>
+{% endif %}
+
+{% if height is not empty %}
+	<p><b>Толщина: </b>{{height}}</p>
+{% endif %}
+
+{% if etag is not empty %}
+	<p><b>Этаж: </b>{{etag}}</p>
+{% endif %}
+
+
+
+
+
+
+<h2>Укажите доп работы до и после стяжки</h2>
+<p><b>
+{% if dop1 is not empty %}
+	{{dop1}}, 
+{% endif %}
+{% if dop2 is not empty %}
+	{{dop2}}, 
+{% endif %}
+{% if dop3 is not empty %}
+	{{dop3}}, 
+{% endif %}
+{% if dop4 is not empty %}
+	{{dop4}}, 
+{% endif %}
+{% if dop5 is not empty %}
+	{{dop5}} , 
+{% endif %}
+{% if dop6 is not empty %}
+	{{dop6}}
+{% endif %}
+</b></p>
+<h2>Выберите подарки</h2>
+<p><b>
+{% if gift1 is not empty %}
+	{{gift1}}, 
+{% endif %}
+{% if gift2 is not empty %}
+	{{gift2}}, 
+{% endif %}
+{% if gift3 is not empty %}
+	{{gift3}}, 
+{% endif %}
+{% if gift4 is not empty %}
+	{{gift4}}, 
+{% endif %}
+{% if gift5 is not empty %}
+	{{gift5}}, 
+{% endif %}
+</b></p>
+
+
+
+
+
+<h2>Цены</h2>
+{% if old_price is not empty %}
+	<p><b>Старая цена: </b>{{old_price}} руб.</p>
+{% endif %}
+
+{% if new_price is not empty %}
+	<p><b>Новая цена: </b>{{new_price}} руб.</p>
+{% endif %}
+
+{% if kredit is not empty %}
+	<p><b>Цена в рассрочку: </b>{{kredit}} руб./12 месяцев</p>
+{% endif %}
+
+<h2>Контакты</h2>
+{% if name is not empty %}
+	<p><b>Имя: </b>{{name}}</p>
+{% endif %}
+
+{% if tell is not empty %}
+	<p><b>Телефон: </b>{{tell}}</p>
+{% endif %}
+
+{% if time is not empty %}
+	<p><b>Время звонка: </b>{{time}}</p>
+{% endif %}
